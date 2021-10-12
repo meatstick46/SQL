@@ -1,0 +1,4 @@
+SELECT        Apartments.Apt_Number, Person.First_Name, Person.Last_Name, Person.Middle_Initial
+FROM            Apartments INNER JOIN
+                         Person ON Apartments.Tenant_ID = Person.Person_ID AND Apartments.Manager_ID = Person.Person_ID
+ORDER BY Person.Last_Name
